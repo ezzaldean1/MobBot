@@ -15,7 +15,7 @@ const queue = new Map();
 
 client.on('ready', () => {
   console.log('---------------');
-  console.log(' Gold Bot Is Online')
+  console.log(' Mob Bot Is Online')
   console.log('---------------')
   client.user.setStatus("Online")
     client.user.setActivity("Mob Server",{type: 'WATCHING'})
