@@ -205,9 +205,17 @@ npm install simple-youtube-api
 npm install queue
 */
 
-client.on('ready', () => {
+client.on('message', msg => {
 
-});
+    if (msg.content == '=play') {
+        if (msg.member.voiceChannel) {
+
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join();
+     }
+    }
+}
+})
 //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
