@@ -207,7 +207,7 @@ npm install queue
 
 client.on('message', msg => {
 
-    if (msg.content == '=play') {
+    if (msg.content == 'play') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
