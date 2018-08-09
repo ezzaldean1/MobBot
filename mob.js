@@ -27,8 +27,8 @@ client.on('ready', () => {
   
 
 
-lient.on("message",function(message) {
-    if(message.content.startsWith(prefix + 'uptime')) {
+client.on("message",function(message) {
+    if(message.content.startsWith('uptime')) {
         let uptime = client.uptime;
 
     let days = 0;
