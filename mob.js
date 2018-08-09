@@ -1243,30 +1243,7 @@ channel.guild.owner.send(`<@!${channelremover.id}>
 
 
 
-  client.on('message' , function (message){
-      var token = 'NDc1NjI2MTA4MDQ2NTQwODIx.Dkhw-A.lNjFIXOamJAuu6uRHGuu2D2A518'; // التوكن هنا بس
-      if(message.content ===  'res') {
-if(message.author.id !== '470500980342128650') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
-          client.destroy();
-          client.login(token) // لا تغير
-var time = 7200000;
-client.setInterval(function() {
-    client.destroy();
-    client.login(token) // لا تغيرها
-  }, time);
-}
-})
-  
 
-
-
-  client.on('ready' , function (){
-var time = 7200000;
-client.setInterval(function() {
-    client.destroy();
-        child_process.fork(__dirname + "/un.js");
-  }, time);
-});
 
 
 
