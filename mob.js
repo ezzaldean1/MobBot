@@ -18,7 +18,7 @@ client.on('ready', () => {
   console.log(' Mob Bot Is Online')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity("Mob Server",{type: 'WATCHING'})
+    client.user.setActivity(" Gladness Server",{type: 'PLAYING'})
 });
 
 
